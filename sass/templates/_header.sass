@@ -1,0 +1,47 @@
+.header
+  background: $max-light
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 999
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2.142rem
+    &__menu
+      max-width: 36.28rem
+      width: 100%
+  &__logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-decoration: none
+    color: $dark
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__contact
+    &__phone
+      font-weight: 700
+      color: $noactive
+      &--dark
+        color: $dark
+
+.nav
+  &__item
+    font-size: 1rem
+    font-weight: 700
+    text-transform: uppercase
+    text-decoration: none
+    color: $noactive
+    &:hover
+      color: $dark
+
+.logo
+  &__text
+    margin-left: 0.857rem
+    text-transform: uppercase
+    font-weight: 700
