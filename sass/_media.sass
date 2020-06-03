@@ -5,13 +5,62 @@
 @media screen and ( max-width: 970px )
   html
     font-size: 12px
+  .hero
+    &__row
+      background-color: rgba($max-light, 0.5)
+      &__img
+        display: none
+  .col-50
+    flex-basis: 30%
+  .col-25
+    flex-basis: 30%
 
 @media screen and ( max-width: 760px )
   .header
     &__block
       &__menu
         display: none
+  .hero
+    &__row
+      flex-direction: column
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+  .col-50
+    flex-basis: 100%
+    margin: auto
+    max-width: 100%
+    margin-bottom: 2rem
+  .col-25
+    flex-basis: 100%
+    margin: auto
+    max-width: 100%
+    margin-bottom: 2rem
+  .advantage
+    &__col
+      &__title
+        max-width: 30rem
+        width: 100%
+      &__desc
+        max-width: 30rem
 
 @media screen and ( max-width: 560px )
-  .header
+  .hero
+    &__content
+      &__go
+        flex-direction: column
+    &__title
+      max-width: 90%
+      font-size: 3.5rem
+      line-height: normal
+      margin-bottom: 1rem
+    &__text
+      &__your
+          margin: auto
+          margin-top: 2rem
+          max-width: 60%
+    &__desc
+      font-size: 1.5rem
+      margin: auto
+      margin-top: 2rem
    

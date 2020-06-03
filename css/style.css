@@ -249,11 +249,56 @@ body {
 
 @media screen and (max-width: 970px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .hero__row {
+    background-color: rgba(255, 255, 255, 0.5); }
+    .hero__row__img {
+      display: none; }
+  .col-50 {
+    flex-basis: 30%; }
+  .col-25 {
+    flex-basis: 30%; } }
 
 @media screen and (max-width: 760px) {
   .header__block__menu {
-    display: none; } }
+    display: none; }
+  .hero__row {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+  .col-50 {
+    flex-basis: 100%;
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 2rem; }
+  .col-25 {
+    flex-basis: 100%;
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 2rem; }
+  .advantage__col__title {
+    max-width: 30rem;
+    width: 100%; }
+  .advantage__col__desc {
+    max-width: 30rem; } }
+
+@media screen and (max-width: 560px) {
+  .hero__content__go {
+    flex-direction: column; }
+  .hero__title {
+    max-width: 90%;
+    font-size: 3.5rem;
+    line-height: normal;
+    margin-bottom: 1rem; }
+  .hero__text__your {
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 60%; }
+  .hero__desc {
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 2rem; } }
 
 .header {
   background: #ffffff;
@@ -351,29 +396,27 @@ body {
     line-height: 80px;
     font-weight: 100; }
   .hero__row {
-    align-items: flex-start;
-    margin-top: 397px; }
-  .hero__col {
-    position: relative; }
-
-.advantage__col__img {
-  position: absolute;
-  top: -100px; }
+    margin-top: 4rem;
+    flex-wrap: wrap; }
+    .hero__row__img {
+      margin-top: 75px;
+      align-items: flex-end; }
+    .hero__row__text {
+      align-items: flex-start;
+      margin-top: 71px; }
 
 .advantage__col__bigtext {
   font-size: 342px;
+  line-height: 255px;
   font-weight: 100;
-  color: #0f1c2e;
-  position: absolute;
-  top: -350px; }
+  color: #0f1c2e; }
 
 .advantage__col__title {
-  font-size: 24px;
+  font-size: 1.875rem;
   line-height: 28px;
   font-weight: 700;
-  color: #0f1c2e;
-  max-width: 19.5rem; }
+  color: #0f1c2e; }
 
 .advantage__col__desc {
   margin-top: 31px;
-  max-width: 260px; }
+  font-size: 1.285rem; }
